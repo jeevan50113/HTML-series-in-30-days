@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Form</title>
+</head>
+<body>
+
+  <form id="form">
+    <h1 style="text-align: center;">Student Form</h1>
+    <fieldset style="border-color: yellow; width: 400px;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <br>
+      <label for="age">Age:</label>
+      <input type="text" id="age" placeholder="Enter your age">
+      <br>
+      <label for="country">Country:</label>
+      <input type="text" id="country" placeholder="Enter your country">
+      <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+      <legend>Student Form</legend>
+    </fieldset>
+  </form>
+
+  <div id="output">
+    <h3>Submitted Data:</h3>
+    <p><strong>Name:</strong> <span id="outName"></span></p>
+    <p><strong>Age:</strong> <span id="outAge"></span></p>
+    <p><strong>Country:</strong> <span id="outCountry"></span></p>
+  </div>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      
+       
+      const name = document.getElementById('name').value;
+      const age = document.getElementById('age').value;
+      const country = document.getElementById('country').value;
+
+      document.getElementById('outName').textContent = name;
+      document.getElementById('outAge').textContent = age;
+      document.getElementById('outCountry').textContent = country;
+    });
+  </script>
+
+</body>
+</html>
