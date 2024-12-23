@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Project</title>
 </head>
 <body>
-    <h1>welcome to UNQ coders</h1>
+    <!-- 1. Introduction to HTML -->
+    <header>
+        <h1>Welcome to the HTML Project</h1>
+        <p>This project covers every essential topic in HTML.</p>
+    </header>
+
+    <!-- 2. Text Formatting -->
+    <section>
+        <h2>Text Formatting</h2>
+        <p>This is a paragraph. <b>This text is bold.</b> <i>This text is italic.</i></p>
+        <p>This is another paragraph.<br>This is a line break.</p>
+        <hr>
+    </section>
+
+    <!-- 3. Lists -->
+    <section>
+        <h2>Lists</h2>
+        <ul>
+            <li>Unordered List Item 1</li>
+            <li>Unordered List Item 2</li>
+        </ul>
+        <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+        </ol>
+        <dl>
+            <dt>Definition Term</dt>
+            <dd>Definition Description</dd>
+        </dl>
+    </section>
+
+    <!-- 4. Links -->
+    <section>
+        <h2>Links</h2>
+        <p><a href="https://www.example.com" target="_blank">External Link</a></p>
+        <p><a href="#local-link">Internal Link</a></p>
+    </section>
+
+    <!-- 5. Images -->
+    <section>
+        <h2>Images</h2>
+        <img src="example.jpg" alt="Example Image" width="300" height="200">
+    </section>
+
+    <!-- 6. Tables -->
+    <section>
+        <h2>Tables</h2>
+        <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 7. Forms -->
+    <section>
+        <h2>Forms</h2>
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- 8. Semantic HTML -->
+    <section>
+        <h2>Semantic HTML</h2>
+        <article>
+            <header>
+                <h3>Article Header</h3>
+            </header>
+            <p>This is an article section.</p>
+            <footer>Article Footer</footer>
+        </article>
+        <aside>
+            <p>This is an aside section.</p>
+        </aside>
+    </section>
+
+    <!-- 9. Multimedia -->
+    <section>
+        <h2>Multimedia</h2>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- 10. HTML5 Features -->
+    <section>
+        <h2>HTML5 Features</h2>
+        <figure>
+            <img src="html5.jpg" alt="HTML5 Image">
+            <figcaption>HTML5 Logo</figcaption>
+        </figure>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            const canvas = document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'blue';
+            ctx.fillRect(10, 10, 150, 75);
+        </script>
+    </section>
+
+    <!-- 11. Accessibility -->
+    <section>
+        <h2>Accessibility</h2>
+        <p role="note">This is an accessible note using ARIA.</p>
+    </section>
+
+    <!-- 12. Best Practices -->
+    <section>
+        <h2>Best Practices</h2>
+        <p>Always write clean and maintainable HTML code.</p>
+        <p>Use comments to explain your code: <!-- This is a comment --></p>
+    </section>
+
+    <!-- 13. Conclusion -->
+    <footer>
+        <h2>Conclusion</h2>
+        <p>Thank you for exploring HTML with this project. Continue learning and coding!</p>
+    </footer>
 </body>
 </html>

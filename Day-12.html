@@ -25,6 +25,24 @@
       <legend>Student Form</legend>
     </fieldset>
   </form>
-  
+  <div id="output"></div>
+  <script>
+    document.getElementById('form').addEventListener('submit',function(event)
+  {
+      event.preventDefault()
+      const name = document.getElementById('name').value
+      const age = document.getElementById('age').value
+      const country = document.getElementById('country').value
+
+      const result = document.getElementById('output')
+
+      result.innerHTML = `<h3>Form Data</h3>
+        <p><strong>Name:</strong>${name}<p>
+          <p><strong>age:</strong>${age}<p>
+            <p><strong>country:</strong>${country}<p>
+      `
+  })
+
+  </script>
 </body>
 </html>
